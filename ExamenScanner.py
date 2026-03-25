@@ -197,7 +197,7 @@ class ExamenScanner:
                 mean_zona = cv2.mean(warp, mask=mask_zona)[0]
                 
                 diferencia_local = mean_zona - mean_in
-                # Justo antes del if es_rellena, agrega:
+                
                 if 25 < diferencia_local < 40 and mean_in < 150:
                     print(f"CASI RELLENA: cx:{cx} cy:{cy} | mean_in:{mean_in:.0f} | diff_local:{diferencia_local:.0f}")
                 es_rellena = diferencia_local > 36 and mean_in < 150
