@@ -337,4 +337,4 @@ if __name__ == '__main__':
     # PONER EL API KEY_____
     
     APIKEY:str = ''
-    result = ExamenScanner(imagen='7.jpeg').run()
+    result = ExamenScanner(imagen='10.jpeg').run()
